@@ -1,0 +1,304 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(./Gilroy.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* justify-content: space-between;  */
+  align-items: flex-end;
+  padding: 0px 90px;
+  padding-top: 120px;
+  /* gap: 10px; */
+}
+#left {
+  height: 100%;
+  width: 40%;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-bottom: 50px; */
+  padding-bottom: 50px;
+}
+#left h1 {
+  /* font-size: 110px ; */
+  font-size: 7vw;
+  font-weight: 200;
+  line-height: 8vw;
+}
+#bottom-left {
+  width: 100%;
+  /* height: 40%; */
+  /* background-color: grey; */
+  /* margin-top: 50px; */
+}
+#color {
+  /* background-color: blue; */
+  width: fit-content;
+  padding: 9px 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+#color h5 {
+  /* font-size: 13px; */
+  font-size: 1vw;
+  font-weight: 500;
+  margin-right: 20px;
+}
+#color1 {
+  height: 1vw;
+  width: 1vw;
+  background-color: burlywood;
+  border-radius: 50%;
+  margin: 3px;
+}
+#color2 {
+  height: 1vw;
+  width: 1vw;
+  background-color: rgba(255, 0, 0, 0.605);
+  border-radius: 50%;
+}
+#left h2 {
+  margin-top: 30px;
+  font-size: 1.8vw;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+#left p {
+  font-size: 1.2vw;
+  width: 70%;
+  font-weight: 400;
+  color: #444;
+  line-height:1.5vw;
+}
+#right {
+  width: 33%;
+  height: 90%;
+  /* background-color:  red; */
+  position: relative;
+}
+#right-top {
+  height: 50px;
+  width: 100%;
+  /* background-color: rgb(102, 168, 57); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+#right-top h4 {
+  font-size: 1.5vw;
+  font-weight: 550;
+}
+#right-top h5 {
+  font-size: 1.4vw;
+  font-weight: 550;
+}
+#right-top h5 i {
+  color: goldenrod;
+}
+#right img {
+  width: 95%;
+  height: 90%;
+  object-fit: cover;
+  /* margin: 50px ; */
+}
+#black-gola {
+  position: absolute;
+  /* background-color: rgb(48, 47, 58); */
+  background-color: rgb(71, 68, 83);
+
+  color: white;
+  height: 135px;
+  width: 135px;
+  border-radius: 50%;
+  right: -10%;
+  top: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#black-gola:hover {
+  height: 155px;
+  width: 155px;
+  right: -12%;
+  background-color: rgb(48, 47, 58);
+}
+#black-gola h5 {
+  color: #d6d6d6;
+  font-size: 1.4vw;
+  font-weight: 400;
+}
+#rotated {
+  position: absolute;
+  left: -10%;
+  bottom: 2%;
+  rotate: -90deg;
+  transform-origin: 0 0;
+  /* font-size: 30px;*/
+  font-size: 2.4vw;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+    #main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        align-items: flex-start;
+        padding: 40px 40px;
+        /* padding-top: 50px; */
+        /* gap: 60px; */
+      }
+      #left {
+        height: fit-content;
+        width: 100%;
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* margin-bottom: 50px; */
+        /* padding-bottom: 50px; */
+      }
+      #left h1 {
+        /* font-size: 110px ; */
+        font-size: 20vw;
+        font-weight: 200;
+        line-height: 17vw;
+      }
+      #bottom-left {
+        width: 100%;
+        /* height: 40%; */
+        /* background-color: grey; */
+        margin-top: 15px;
+      }
+      #color {
+        /* background-color: blue; */
+        width: fit-content;
+        padding: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        border: 1px solid black;
+      }
+      #color h5 {
+        /* font-size: 13px; */
+        font-size: 4vw;
+        font-weight: 500;
+        margin-right: 5px;
+      }
+      #color1 {
+        height: 3vw;
+        width: 3vw;
+        background-color: burlywood;
+        border-radius: 50%;
+        margin: 3px;
+      }
+      #color2 {
+        height: 3vw;
+        width: 3vw;
+        background-color: rgba(255, 0, 0, 0.605);
+        border-radius: 50%;
+      }
+      #left h2 {
+        margin-top: 15px;
+        font-size: 4.5vw;
+        margin-bottom: 5px;
+        font-weight: 600;
+      }
+      #left p {
+        font-size: 3vw;
+        width: 100%;
+        font-weight: 400;
+        color: #444;
+        line-height:4vw;
+      }
+      #right {
+        width: 100%;
+        height: fit-content;
+        /* background-color:  red; */
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        top: -20px;
+      }
+      #right-top {
+        height:fit-content;
+        width: 100%;
+        /* background-color: rgb(102, 168, 57); */
+        /* display: flex; */
+        /* padding: 5px ; */
+      }
+      #right-top h4 {
+        font-size: 4vw;
+        font-weight: 550;
+      }
+      #right-top h5 {
+        font-size: 4vw;
+        font-weight: 550;
+      }
+      #right-top h5 i {
+        color: goldenrod;
+      }
+      #right img {
+        width: 95%;
+        height: 90%;
+        object-fit: cover;
+        margin-top: -80px ;
+        border-radius: 5px;
+      }
+      #black-gola {
+        position: absolute;
+        /* background-color: rgb(48, 47, 58); */
+        background-color: rgb(71, 68, 83);
+      
+        color: white;
+        width: 25vw ;
+        height: 25vw;
+        border-radius: 50%;
+        right: -10%;
+        top: 34%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* #black-gola:hover {
+        height: 155px;
+        width: 155px;
+        right: -12%;
+        background-color: rgb(48, 47, 58);
+      } */
+      #black-gola h5 {
+        color: #d6d6d6;
+        font-size: 4vw;
+        font-weight: 400;
+      }
+      #rotated {
+        position: absolute;
+        left: 1%;
+        top: -5%;
+        rotate: 0deg;
+        /* transform-origin: 0 0; */
+        /* font-size: 30px;*/
+        font-size: 6vw;
+        font-weight: 600;
+      }
+}
